@@ -21,6 +21,16 @@ public class PowerOfFourTest {
     }
 
     @Test
+    public void givenNegativeNumberShouldReturnFalse() {
+        //Arrange
+
+        //Act
+        Boolean result = powerOfFour.checkIfPower(-64);
+        //Assert
+        assertFalse(result);
+    }
+
+    @Test
     public void givenPowerOfFourShouldReturnTrue() {
         //Arrange
 

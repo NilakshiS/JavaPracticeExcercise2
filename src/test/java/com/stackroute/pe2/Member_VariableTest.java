@@ -29,4 +29,15 @@ public class Member_VariableTest {
         //Assert
         assertEquals("Member's Name: Harry\nMember's Age: 24\nMember's Salary: 4500000.0",result);
     }
+
+    @Test
+    public void givenNegativeValuesShouldReturnNull() {
+        //Arrange
+
+        //Act
+        String result = member_variable.Display("Harry",-24,4500000);
+        assertNull(result);
+        result = member_variable.Display("Harry",24,-4500000);
+        assertNull(result);
+    }
 }

@@ -8,6 +8,8 @@ public class PowerOfFour {
         if (a == 1){
             return true;
         }
+        if (a < 0)
+            return false;
         int remainder,quotient,num;
         num = a;
         do {

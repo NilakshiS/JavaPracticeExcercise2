@@ -4,6 +4,8 @@ public class Member_Variable {
     Member member;
 
     public String Display (String name, int age, double salary) {
+        if (age <= 0 || salary < 0)
+            return null;
         member = new Member(name,age,salary);
         String output;
         output = "Member's Name: "+member.getName();

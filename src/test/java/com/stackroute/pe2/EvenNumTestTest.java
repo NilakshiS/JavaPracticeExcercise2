@@ -12,7 +12,8 @@ public class EvenNumTestTest {
 
         //Act
         boolean result = EvenNumTest.isEven(4);
-        //Assert
+        assertTrue(result);
+        result = EvenNumTest.isEven(-4);
         assertTrue(result);
     }
 
@@ -22,6 +23,9 @@ public class EvenNumTestTest {
 
         //Act
         boolean result = EvenNumTest.isEven(5);
+        //Assert
+        assertFalse(result);
+        result = EvenNumTest.isEven(-5);
         //Assert
         assertFalse(result);
     }
